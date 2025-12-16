@@ -25,6 +25,9 @@ const [getDoctorsdata] = await db.execute('select * from doctors order by id des
                 <th scope="col" className="px-6 py-3 font-medium">
                     Address
                 </th>
+                <th scope="col" className="px-6 py-3 font-medium">
+                    Postal code
+                </th>
             </tr>
         </thead>
         <tbody>
@@ -47,6 +50,9 @@ const [getDoctorsdata] = await db.execute('select * from doctors order by id des
                 </td>
                 <td className="px-6 py-4">
                     {data.address}
+                </td>
+                <td className="px-6 py-4">
+                    TBC
                 </td>
             </tr>
             ))
