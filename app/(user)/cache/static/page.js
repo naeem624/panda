@@ -1,5 +1,5 @@
 import db from "@/app/config/db"
-export const revalidate = 30
+export const revalidate = 0
 export default async function StaticCache() {
     const [data] = await db.execute("select * from doctors");
     console.log(data);
